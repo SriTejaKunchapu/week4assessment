@@ -1,0 +1,24 @@
+
+<h2>Customer Details</h2> 
+
+<hr/>
+<div *ngIf="customer">
+  <div>
+    <label><b> Name: </b></label> {{customer.name}}
+  </div>
+  <div>
+    <label><b> Address: </b></label> {{customer.address}}
+  </div>
+  <div>
+    <label><b> Age: </b></label> {{customer.age}}
+  </div>  
+  <div>
+    <label><b> Acc Type: </b></label> {{customer.accType}}
+  </div>  
+</div>
+
+<br>
+<br>
+<button (click)="list()" class="btn btn-primary">Back to Customer List</button><br>
+
+
